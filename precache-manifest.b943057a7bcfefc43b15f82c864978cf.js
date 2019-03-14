@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/react-calendars-playground/static/css/2.8834019b.chunk.css"
   },
   {
-    "revision": "92383d0b17dd45eaefbb15930107d0f5",
+    "revision": "6bb747047ce2e1bad0c73382cf3abfee",
     "url": "/react-calendars-playground/index.html"
   }
 ];
