@@ -2,8 +2,15 @@
   "name": "play",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://iliyat.github.io/react-calendars-playground",
   "dependencies": {
+    "@y0c/react-datepicker": "^0.3.5",
+    "moment-range": "^4.0.2",
+    "node-sass": "^4.11.0",
+    "rc-calendar": "^9.10.10",
     "react": "^16.8.4",
+    "react-calendar": "^2.18.1",
+    "react-daterange-picker": "^2.0.1",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8"
   },
@@ -11,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,5 +30,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }

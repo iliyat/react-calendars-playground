@@ -1,25 +1,58 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import ReactCalendar from './calendars/ReactCalendar';
+import RCCalendar from './calendars/RCCalendar'
+import Y0CReactDatePicker from './calendars/Y0CReactDatePicker'
+import ReactDaterangePicker from './calendars/ReactDaterangePicker'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <section>
+          <h3>
+            <a
+              href="https://github.com/wojtekmaj/react-calendar"
+              target="_blank"
+            >
+              react-calendar
+            </a>
+          </h3>
+          <ReactCalendar/>
+        </section>
+        <section>
+          <h3>
+            <a
+              href="https://github.com/react-component/calendar"
+              target="_blank"
+            >
+              rc-calendar
+            </a>
+          </h3>
+          <RCCalendar />
+        </section>
+        <section>
+          <h3>
+            <a
+              href="https://github.com/y0c/react-datepicker"
+              target="_blank"
+            >
+              @y0c/react-datepicker
+            </a>
+          </h3>
+          <Y0CReactDatePicker />
+        </section>
+        <section>
+          <h3>
+            <a
+              href="https://github.com/onefinestay/react-daterange-picker"
+              target="_blank"
+            >
+              react-daterange-picker
+            </a>
+          </h3>
+          <ReactDaterangePicker />
+        </section>
       </div>
     );
   }
